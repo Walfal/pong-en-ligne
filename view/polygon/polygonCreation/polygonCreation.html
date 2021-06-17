@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Polygon preparation</title>
+		<link rel="stylesheet" href="polygonCreation.css" />
+		<script src="polygonCreation.js"></script>
+	</head>
+	<body>
+		<h1>Creation of the game</h1>
+		<label for="nbPlayers">
+			Number of players: <input type="number" id="nbPlayers" value="" width="1" onchange="selectionTouches()"
+		/></label>
+		<!-- <label for="nbSides"> Number of sides: <input type="number" id="nbSides" value="" width="1" /></label> -->
+
+		<label for="difficulte">
+			Diffculty:
+			<select id="difficulte">
+				<option>Easy</option>
+				<option selected>Normal</option>
+				<option>Hard</option>
+			</select>
+		</label>
+
+		<label for="scoreVictoire">
+			Victory score:
+			<input type="number" id="victoryScore" value="20" width="1" />
+		</label>
+		<div id="divKeyboard" style="color: white"></div>
+
+		<label class="player" for="player">
+			<input type="text" class="key" id="leftKey" maxlength="1" placeholder="Left key" />
+			<input type="text" id="pseudo" placeholder="Your pseudo" />
+			<input type="text" class="key" id="rightKey" maxlength="1" placeholder="Right key" />
+		</label>
+		<label class="player" for="player">
+			<input type="color" id="leftColor" value="#ffffff" />
+			<input type="color" id="colorPaddle" value="#ff0000" />
+			<input type="color" id="rightColor" value="#ffffff" />
+		</label>
+
+		<a href="../polygonGame/polygonGame.html" />Let's play</a>
+	</body>
+</html>
